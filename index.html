@@ -18,45 +18,62 @@
       <p class="subtitle">Get the latest news on how your code is doing right in your inbox</p>
     </div>
     <div class="row content">
-
-
-
       <form action="index.html" method="post">
         <h1>Contact Information</h1>
         <div class="form contact">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="full_name" placeholder="Required" required>
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="Required" required>
-          <label for="phone">Phone Number</label>
-          <input type="text" id="phone" name="phone">
-          <label for="city">City</label>
-          <input type="text" id="city" name="city">
-          <label for="state">State</label>
-          <select id="state" name="state">
-            <option value="">Choose State</option>
-            <option value="ny">New York</option>
-          </select>
-          <label for="zip">Zip Code</label>
-          <input type="text" id="zip" name="zip">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="full_name" placeholder="Required" required>
+            </div>
+          <div class="input-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Required" required>
+          </div>
+          <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone">
+          </div>
+          <div class="input-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city">
+          </div>
+          <div class="input-group">
+              <label for="state">State</label>
+              <select id="state" name="state">
+                <option value="">Choose State</option>
+                <option value="ny">New York</option>
+              </select>
+          </div>
+          <div class="input-group">
+              <label for="zip">Zip Code</label>
+              <input type="text" id="zip" name="zip">
+          </div>
         </div>
 
         <h1>Newsletter</h1>
         <div class="form newsletter">
           <p>Select the newsletters you would like to recieve</p>
-          <input type="checkbox" id="htmlNews" name="html_news" value="1"><label for="htmlNews">HTML News</label><br>
-          <input type="checkbox" id="cssNews" name="css_news" value="1"><label for="cssNews">CSS News</label><br>
-          <input type="checkbox" id="jsNews" name="js_news" value="1"><label for="jsNews">Javascript News</label><br>
-
+          <div class="input-group">
+              <input type="checkbox" id="htmlNews" name="html_news" value="1"><label for="htmlNews">HTML News</label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="cssNews" name="css_news" value="1"><label for="cssNews">CSS News</label>
+          </div>
+          <div class="input-group">
+              <input type="checkbox" id="jsNews" name="js_news" value="1"><label for="jsNews">Javascript News</label><br>
+          </div>
           <p>Newsletter format</p>
-          <input type="radio" id="formatHtml" name="news_format" value="html"><label for="formatHtml"></label><label for="formatHtml">HTML</label><br>
-          <input type="radio" id="formatPlain" name="news_format" value="plain"><label for="formatPlain"></label><label for="formatPlain">Plain text</label><br>
-
+          <div class="input-group">
+              <input type="radio" id="formatHtml" name="news_format" value="html"><label for="formatHtml"></label><label for="formatHtml">HTML</label>
+          </div>
+          <div class="input-group">
+              <input type="radio" id="formatPlain" name="news_format" value="plain"><label for="formatPlain"></label><label for="formatPlain">Plain text</label><br>
+          </div>
           <p>Other topics you'd like to hear about</p>
           <textarea name="comment" id="comment" rows="8" cols="80"></textarea>
         </div>
-
         <button type="submit" name="signup">Sign Up</button>
+
       </form>
 
     </div>

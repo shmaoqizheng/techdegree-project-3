@@ -30,6 +30,14 @@ button[type="submit"] {
   color: white;
   border: none;
   background-color: #4EBBB5;
+  transition: 0.5s ease;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    box-shadow: 0px 6px 20px -5px rgba(0,0,0,0.3);
+    background: #30d9d1;
+    transition: 0.5s ease;
 }
 
 input,
@@ -67,8 +75,14 @@ input::placeholder {
   color: #A8ADB2;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   border: 2px solid #46698B;
+  outline: none;
+  transition: border 0.5s ease;
+}
+
+select:focus {
   outline: none;
 }
 
@@ -131,6 +145,31 @@ input:focus::-webkit-input-placeholder {
 }
 
 
-@media (width > 768px) {
+@media (min-width: 767px) {
+    .row {
+        width: 80%;
+        max-width: 700px;
+        padding: 40px 0;
+    }
 
+    .contact .input-group {
+        display: flex;
+        align-items: baseline;
+    }
+
+    label {
+        margin: 0;
+    }
+
+    .contact .input-group label {
+        flex: 1 0 20%;
+    }
+
+    .contact .input-group label[for="zip"] {
+        flex: 0 0 20%;
+    }
+
+    #zip {
+        width: 25%;
+    }
 }
