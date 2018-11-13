@@ -1,0 +1,136 @@
+* {
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+}
+
+p {
+  color: #55687A;
+
+}
+
+h1 {
+  font-size: 1.3em;
+  color: #2D3945;
+  margin-top: 10px;
+}
+
+label {
+  color: #55687A;
+  display: block;
+  margin-top: 15px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  font-size: 1.3em;
+  line-height: 3;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  background-color: #4EBBB5;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 4px;
+  line-height: 1;
+  font-size: 0.8em;
+  padding: 15px 15px;
+  border: 2px solid transparent;
+  background: #EFF0F1;
+}
+
+input[name="zip"] {
+  width: 50%;
+}
+
+.newsletter input {
+  display: inline-block;
+  width: auto;
+  margin: 18px 18px 0 0;
+}
+
+.newsletter label {
+  display: inline;
+}
+
+input::placeholder {
+  font-family: 'PT Serif Caption', serif;
+  text-align: right;
+  color: #A8ADB2;
+}
+
+input:focus {
+  border: 2px solid #46698B;
+  outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.newsletter p {
+  margin-top: 26px;
+  margin-bottom: 6px;
+}
+
+.row {
+  margin: auto;
+  width: 90%;
+  padding: 20px 0;
+}
+
+.banner {
+  text-align: center;
+  background: #2D3945;
+}
+
+.banner h1 {
+  margin: 0px;
+  color: white;
+  line-height: 3.7;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 4px solid #2D3945;
+}
+
+.subtitle {
+  color: #B1B5B9;
+}
+
+.content {
+  border-top: 2px solid #2D3945;
+  margin-top: 3px;
+}
+
+.form {
+  margin-bottom: 30px;
+}
+
+.contact {
+  border-bottom: 2px solid #2D3945;
+  padding-bottom: 20px;
+}
+
+.content h1 {
+  margin-bottom: 25px;
+}
+
+.footer p {
+  text-align: center;
+  font-family: 'PT Serif Caption', serif;
+}
+
+
+@media (width > 768px) {
+
+}
