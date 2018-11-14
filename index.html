@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>The Code Review</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,77 +9,81 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption:400i" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="banner">
-      <h1>THE CODE REVIEW</h1>
+        <h1>THE CODE REVIEW</h1>
     </div>
     <div class="row header">
-      <h1>Signup for our newsletter</h1>
-      <p class="subtitle">Get the latest news on how your code is doing right in your inbox</p>
+        <h1>Signup for our newsletter</h1>
+        <p class="subtitle">Get the latest news on how your code is doing right in your inbox</p>
     </div>
     <div class="row content">
-      <form action="index.html" method="post">
-        <h1>Contact Information</h1>
-        <div class="form contact">
-            <div class="input-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="full_name" placeholder="Required" required>
-            </div>
-          <div class="input-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="Required" required>
-          </div>
-          <div class="input-group">
-              <label for="phone">Phone Number</label>
-              <input type="text" id="phone" name="phone">
-          </div>
-          <div class="input-group">
-              <label for="city">City</label>
-              <input type="text" id="city" name="city">
-          </div>
-          <div class="input-group">
-              <label for="state">State</label>
-              <select id="state" name="state">
-                <option value="">Choose State</option>
-                <option value="ny">New York</option>
-              </select>
-          </div>
-          <div class="input-group">
-              <label for="zip">Zip Code</label>
-              <input type="text" id="zip" name="zip">
-          </div>
-        </div>
+        <form action="index.html" method="post">
+            <fieldset class="contact">
+                <h1>Contact Information</h1>
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="full_name" placeholder="Required" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Required" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Optional">
+                </div>
+                <div class="input-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Optional">
+                </div>
+                <div class="input-group">
+                    <label for="state">State</label>
+                    <select id="state" name="state">
+                        <option value="">Choose State</option>
+                        <option value="ny">New York</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="zip" placeholder="Optional">
+                </div>
+            </fieldset>
 
-        <h1>Newsletter</h1>
-        <div class="form newsletter">
-          <p>Select the newsletters you would like to recieve</p>
-          <div class="input-group">
-              <input type="checkbox" id="htmlNews" name="html_news" value="1"><label for="htmlNews">HTML News</label>
-          </div>
-          <div class="input-group">
-              <input type="checkbox" id="cssNews" name="css_news" value="1"><label for="cssNews">CSS News</label>
-          </div>
-          <div class="input-group">
-              <input type="checkbox" id="jsNews" name="js_news" value="1"><label for="jsNews">Javascript News</label><br>
-          </div>
-          <p>Newsletter format</p>
-          <div class="input-group">
-              <input type="radio" id="formatHtml" name="news_format" value="html"><label for="formatHtml"></label><label for="formatHtml">HTML</label>
-          </div>
-          <div class="input-group">
-              <input type="radio" id="formatPlain" name="news_format" value="plain"><label for="formatPlain"></label><label for="formatPlain">Plain text</label><br>
-          </div>
-          <p>Other topics you'd like to hear about</p>
-          <textarea name="comment" id="comment" rows="8" cols="80"></textarea>
-        </div>
-        <button type="submit" name="signup">Sign Up</button>
+            <fieldset class="newsletter">
+                <h1>Newsletter</h1>
+                <p>Select the newsletters you would like to recieve</p>
+                <div class="input-group">
+                    <input type="checkbox" id="htmlNews" name="html_news" value="1"><label for="htmlNews">HTML News</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="cssNews" name="css_news" value="1"><label for="cssNews">CSS News</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="jsNews" name="js_news" value="1"><label for="jsNews">Javascript News</label><br>
+                </div>
+                <p>Newsletter format</p>
+                <div class="input-group">
+                    <input type="radio" id="formatHtml" name="news_format" value="html"><label for="formatHtml"></label><label
+                        for="formatHtml">HTML</label>
+                </div>
+                <div class="input-group">
+                    <input type="radio" id="formatPlain" name="news_format" value="plain"><label for="formatPlain"></label><label
+                        for="formatPlain">Plain text</label><br>
+                </div>
+                <p>Other topics you'd like to hear about</p>
+                <textarea name="comment" id="comment" rows="8"></textarea>
+                <button type="submit" name="signup">Sign Up</button>
+            </fieldset>
 
-      </form>
+        </form>
 
     </div>
     <div class="footer">
-      <p>Copyright The Code Review</p>
+        <p>Copyright The Code Review</p>
     </div>
-  </body>
+</body>
+
 </html>

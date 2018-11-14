@@ -16,10 +16,14 @@ h1 {
   margin-top: 10px;
 }
 
+fieldset {
+  border: 0px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
 label {
   color: #55687A;
-  display: block;
-  margin-top: 15px;
 }
 
 button[type="submit"] {
@@ -40,11 +44,10 @@ button[type="submit"]:hover {
     transition: 0.5s ease;
 }
 
-input,
-select,
+.contact input,
+.contact select,
 textarea {
   display: block;
-  width: 100%;
   width: 100%;
   margin: 10px 0;
   border-radius: 4px;
@@ -55,18 +58,23 @@ textarea {
   background: #EFF0F1;
 }
 
-input[name="zip"] {
+.contact .input-group {
+  margin-top: 15px;
+}
+
+.contact input[name="zip"] {
   width: 50%;
 }
 
-.newsletter input {
-  display: inline-block;
+.newsletter .input-group {
   width: auto;
-  margin: 18px 18px 0 0;
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
 }
 
-.newsletter label {
-  display: inline;
+.newsletter .input-group input {
+  margin-right: 15px;
 }
 
 input::placeholder {
@@ -79,7 +87,29 @@ input:focus,
 textarea:focus {
   border: 2px solid #46698B;
   outline: none;
-  transition: border 0.5s ease;
+  transition: 0.5s ease;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+  padding: 6px;
+  background: #EFF0F1;  
+  border: 4px solid #EFF0F1;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  border: 4px solid #EFF0F1;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background: #4EBBB5;
+}
+
+input[type="radio"] {
+  border-radius: 10px;
 }
 
 select:focus {
@@ -98,12 +128,11 @@ input:focus::-webkit-input-placeholder {
 .row {
   margin: auto;
   width: 90%;
-  padding: 20px 0;
 }
 
 .banner {
   text-align: center;
-  background: #2D3945;
+  background: rgb(53, 53, 53);
 }
 
 .banner h1 {
@@ -115,6 +144,7 @@ input:focus::-webkit-input-placeholder {
 .header {
   text-align: center;
   border-bottom: 4px solid #2D3945;
+  padding: 20px 0;
 }
 
 .subtitle {
@@ -124,10 +154,6 @@ input:focus::-webkit-input-placeholder {
 .content {
   border-top: 2px solid #2D3945;
   margin-top: 3px;
-}
-
-.form {
-  margin-bottom: 30px;
 }
 
 .contact {
@@ -145,11 +171,10 @@ input:focus::-webkit-input-placeholder {
 }
 
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .row {
         width: 80%;
         max-width: 700px;
-        padding: 40px 0;
     }
 
     .contact .input-group {
